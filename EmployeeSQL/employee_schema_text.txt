@@ -1,0 +1,47 @@
+#For use with https://www.quickdatabasediagrams.com/
+
+
+departments 
+-
+dept_no PK string
+dept_name string
+
+
+
+dept_emp 
+-
+emp_no PK int FK >- employees.emp_no
+dept_no string FK >- departments.dept_no
+
+
+
+dept_manager 
+-
+dept_no string FK >- departments.dept_no
+emp_no PK int FK-> employees.emp_no
+
+
+
+employees 
+-
+emp_no PK int
+emp_title_id string
+birth_date string 
+first_name  string
+last_name string
+sex string
+hire_date string 
+
+
+
+salaries
+-
+emp_no PK int FK >- employees.emp_no
+salary int
+
+
+
+titles
+-
+title_id PK string
+title UNIQUE string
