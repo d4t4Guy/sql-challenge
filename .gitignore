@@ -1,0 +1,5 @@
+#ignore jupyter checkpoints folder
+/EmployeeSQL/.ipynb_checkpoints/
+
+#ignore data folder since these will be available to the graders
+/data/
